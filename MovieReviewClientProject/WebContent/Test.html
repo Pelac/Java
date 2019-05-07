@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="img/minilogo.jpg">
+<title>24 Movieratings</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+footer {
+	color: black;
+	padding: 15px;
+}
+
+label {
+	color: black;
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-brand" href=home.html>
+				24 Movieratings</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href=home.html>Home</a></li>
+				<li><a href=about.html>About</a></li>
+				<li><a href=findmovies.jsp>Find movies</a></li>
+				<li><a href=managemovies.jsp>Manage movies</a></li>
+				<li class="active"><a href=Test.html>Test</a></li>
+
+			</ul>
+		</div>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>
+					<img width="200" length="100" src="img/moviez.jpg">
+				</h1>
+				<p>The best place to rate movies.</p>
+			</div>
+		</div>
+		<div class="container">
+			<h2 style="color: Black">Run test</h2>
+		</div>
+		<div class="container">
+			<meta http-equiv="Content-Type"
+				content="text/html; charset=ISO-8859-1">
+			<title>Insert title here</title>
+			</head>
+			<body>
+
+				<hr>
+				<p>
+					Test Facade:<br>
+				</p>
+				<form action="TestServlet" method="get" name="youPickItForm" >
+					<select name="suite" size="2" multiple style="width: 300px">
+						<option value="org.ics.test.TestCaseBean">Facade</option>
+					</select><br><br> <input type="submit" value="Run" />
+				</form>
+			</body>
+			<footer class="container-fluid text-center">
+				<hr>
+				<p>COPYRIGHT 2018, 24 consulting ab</p>
+			</footer>
+</body>
+</html>

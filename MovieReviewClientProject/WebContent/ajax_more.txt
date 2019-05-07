@@ -1,0 +1,5 @@
+<h1 style="color:Black">Contact</h1>
+<a href=https://youtu.be/RlSuGVqByFk?t=51>contact@notarealadress.com</a>
+
+<p style="color:Black">Latsasgatan 69</p>
+<p style="color:Black">420 69, Olund</p>

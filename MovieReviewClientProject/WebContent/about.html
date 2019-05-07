@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="minilogo.png">
+  <title>24 Movieratings</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+   
+    footer {
+      color: black;
+	padding: 15px;
+   
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+<div class="navbar-brand" href=home.html>24 Movieratings</a>
+		</div>
+      <ul class="nav navbar-nav">
+		<li><a href=home.html>Home</a></li>  
+		<li class="active"><a href=about.html>About</a></li>  
+		<li><a href=findmovies.jsp>Find movies</a></li>
+		<li><a href=managemovies.jsp>Manage movies</a></li>
+		<li><a href=Test.html>Test</a></li>
+		
+      </ul>
+    </div>
+<div class="container">
+  <div class="jumbotron">
+    <h1><img width="200" length="100" src="img/moviez.jpg"></h1>
+    <p>	The best place to rate movies. </p>
+ </div>
+</div>
+<div class="container">
+	<h1 style="color:Black">About 24Consulting</h1>
+	<p style="color:Black">24Consulting was created the fall of 2017 by five students at the institution of informatics at Lunds university. Due to the interest in movies and the passion for filmmaking, the company decided to develop, what is today, the site 24MovieRating. The site launched 20/4 - 2018 and has rocketed through its first hundred billion users and is still going strong.
+The company 24Consulting has a vast width of expertise, but 24MovieRate is the core and heart of the entire company. This new website is the only movie rating system that can compete with IMDB, and we are eager to take a major piece of the market.</p>
+
+<h1 style="color:Black">Goals</h1>
+<p style="color:Black">The goal for 24MovieRate is to become the biggest movie rating system on the market. Considering the movies and their rating, we strive to have an accurate and fair rating for every movie. To achieve these goals, we differentiate by having trusted movie enthusiasts rating the movies fairly and with some degree of motivation behind the rating.
+</p>
+<h1 style="color:Black">Feedback</h1>
+<p style="color:Black">We gladly accept any feedback imaginable from our users. If you wish to send feedback you are welcome to send an email to the adress below.</p>
+
+<div class="container" id="contact"><button type="button" onclick="showMore()"> Contact us!</b></div>
+<script type="text/javascript">
+function showMore() {
+  var xhttp;
+	xhttp= new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4) {
+	console.log(xhttp);
+      document.getElementById("contact").innerHTML =
+      xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_more.txt", true);
+  xhttp.send();
+}
+</script>
+<footer class="container-fluid text-center">
+<p></p>
+<hr>
+  <p>COPYRIGHT 2018, 24 consulting ab</p>
+</footer>
+</body>
+</html>
